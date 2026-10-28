@@ -1,0 +1,27 @@
+Scripts Python (stdlib seulement) — versions nettoyees pour publication
+========================================================================
+
+Contenu :
+- mailbot-ftp.py (v2.4) : serveur FREQ par courriel, avec reseau FREQ
+- dumpbox.py (v1.11) : depot d'archives par page web, limite de vitesse
+- mini-web.py (v1.2) : petit serveur statique, port 80
+- stats.py (v1.4) : pages HTML de statistiques a partir des journaux
+- fetcher.py (v1.17) : telechargement de documents libres (IA, arXiv,
+  Gutenberg, Semantic Scholar, OpenAlex, NASA NTRS, liste d'URLs)
+- diag-ssl.py, diag-chaine.py, diag-racines.py : diagnostics SSL Windows
+- vendres.py (v3.6) : petites annonces, avec vignettes ffmpeg
+- simul-freq.py (v1.2) : simulation d'un courriel demandeur FREQ
+  (depose un .msg dans la file locale MDaemon, pour tests seulement)
+
+Nettoyage effectue avant publication :
+- domaine, adresses courriel, nom de serveur et nom d'utilisateur
+  personnels remplaces par des exemples generiques (exemple.com,
+  MonServeur, admin, proprietaire).
+- aucun mot de passe dans ces .py : les mots de passe vivent dans
+  les .conf / .json, qui ne sont PAS inclus ici. A remplir chez soi.
+- chemins personnels generises ; adaptez DOSSIER, PORT et COURRIEL
+  a votre installation avant de lancer.
+
+Chaque script s'execute avec Python 3, bibliotheque standard
+seulement, et se lance par un .bat sous Windows (non inclus ici,
+a adapter) ou directement : python <script>.py
